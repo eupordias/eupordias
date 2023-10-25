@@ -1,0 +1,40 @@
+{
+    "tasks": [
+        {
+            "label": "git sync",
+            "type": "shell",
+            "command": "yes | git add . && git commit -m 'Atualizações.' && git push;",
+            "problemMatcher": []
+        },
+        {
+            "label": "git pull",
+            "type": "shell",
+            "command": "git pull;",
+            "problemMatcher": []
+        },
+        {
+            "label": "composer update",
+            "type": "shell",
+            "command": "yes | composer update;",
+            "problemMatcher": []
+        },
+        {
+            "label": "migrate up",
+            "type": "shell",
+            "command": "./yii migrate/fresh;",
+            "problemMatcher": []
+        },
+        {
+            "label": "migrate down",
+            "type": "shell",
+            "command": "./yii migrate/fresh;",
+            "problemMatcher": []
+        },
+        {
+            "label": "migrate fresh",
+            "type": "shell",
+            "command": "./yii migrate/fresh;",
+            "problemMatcher": []
+        }
+    ]
+}
